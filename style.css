@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(to right, #022045, #0E3F8C) left top no-repeat;
+    overflow: hidden;
+}
+
+.logbtn:focus {
+    border: 0;
+}
+
+.navdistance {
+    padding-top: 80px;
+}
+
+.homeForm {
+    position: absolute;
+    display: flex;
+    background: white;
+    color: black;
+    border-radius: 5px;
+
+}
+
+.went {
+    margin:auto 10px;
+
+}
+
+select,
+input {
+    border: 0;
+}
+
+.homeForm .went select:focus,
+.homeForm .went input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+.homeForm i{
+    margin:auto 10px ;
+    color: #0E3F8C;
+}
+.homeForm button{
+    margin: 10px;
+}
+@media (max-width: 992px) { 
+    .homeForm {
+        display: block;
+    }
+    select,
+input {
+  margin-top: 5px;
+}
+ }
+ .navdistance{
+    padding-top: 60px;
+ }
+ .navbar {
+    background-color: transparent;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .house{
+    position: relative;
+  }
+.house img{
+    border-top-left-radius:5px ;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.heart{
+    display: none;
+    text-align: end;
+    position: absolute;
+    top: 2%;
+    right: 0%;
+    
+}
+.heart i{
+    background-color: #ffff;
+    padding: 7px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.clr{
+    color: red;
+}
+.house:hover .heart{
+    display: block;
+}
+.new{
+    position: absolute;
+    top: 2%;
+    margin-inline:10px ;
+    color: white;
+    background-color: blue;
+    width: 60px !important;
+    padding:3px  5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.new p{
+    margin-block: auto;
+}
+hr{
+    height: 0.5px;
+}
+.houseName:hover{
+color: blue;
+cursor: pointer;
+}
+.fa-circle-check{
+    transform: translateY(3px);
+}
+.video-section{
+    position: relative;
+}
+.video-section button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.video-section button i{
+padding: auto;
+transform: translate(2px,1px);
+}
+.img{
+    display: flex;
+}
+.img img{
+    width: 40px;
+    height: 30px;
+}
+.img .img1{
+transform: translateX(-10px)
+}
+.img .img2{
+    transform: translateX(-20px)
+    }
+    .img div{
+        position: relative;
+        width: 40px;
+        height: 30px;
+        background-color: black;
+        color: #ffff;
+        transform: translate(-40px);
+    }
+.img div p{  
+padding:5px 7px;
+}
+.profile-section{
+    margin-inline-start:10px;
+    width: 85%;
+    position: absolute;
+    display: flex;
+    bottom: 1%;
+    justify-content: space-between;
+}
+.profile-section img{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+/* margin-block: auto; */
+object-fit: cover;
+}
+.footer-list li {
+    list-style: none;
+    transform: translateX(-30px);
+    margin-top: 8px;
+}
+
+.icon {
+    display: flex;
+    /* position: relative; */
+}
+
+.icon div {
+    position: relative;
+}
+
+.icon div i {
+    background: #fff;
+    border-radius: 50%;
+    color: green;
+    padding: 10px 11px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.icon div i:hover{
+    color: white;
+    background-color: green;
+}
+
+.footer {
+    background-color: #EADFD7;
+}
+/* Decrease the size of the scrollbar */
+::-webkit-scrollbar {
+    width: 8px; /* You can adjust the size as needed */
+  }
+  
+  /* Change the color of the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change to your desired color */
+  }
+  
+  /* Change the color of the scrollbar handle/thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change to your desired color */
+  }
+  
+  /* Change the color on hover state of the scrollbar handle/thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change to your desired color */
+  }
+  

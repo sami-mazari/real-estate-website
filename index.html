@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container-fluid header" id="home">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-house-crack me-1"></i>home</a>
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center mx-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold mx-2" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold mx-2" href="#rent">Rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold mx-2" href="#sell">Sell</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold mx-2" href="#buy">Buy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-semibold mx-2" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-block" role="search">
+                        <button class="btn logbtn text-light" type="submit">LogIn</button>
+                        <button class="btn btn-primary rounded-pill" type="submit">Get Started</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container text-light navdistance mt-5">
+            <div class="row pt-5">
+                <div class="col-lg-6 col-12 ">
+                    <h1 class="fw-bold lh-sm">Find a place<br>
+                        where you can<br>
+                        be yourself</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe corrupti ipsa autem debitis
+                        aspernatur quas dignissimos nesciunt fugit fuga velit facere qui accusamus sed odit amet
+                        obcaecati, dolorem blanditiis maiores.</p>
+                    <form class="homeForm">
+                        <div class="went">
+                            <label>Want to</label><br>
+                            <select name="house" id="house" required>
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <i class="fa-solid fa-shop"></i>
+                        <div class="went">
+                            <label>Property Type</label><br>
+                            <select name="house" id="house" aria-placeholder="Any">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="mercedes">Mercedes</option>
+                                <option value="audi">Audi</option>
+                            </select>
+                        </div>
+                        <i class="fa-solid fa-hotel"></i>
+                        <div class="went">
+                            <label>Location</label><br>
+                            <input type="text" required>
+                        </div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <button class="btn btn-primary"><i
+                                class="fa-solid fa-magnifying-glass me-1 text-light"></i>Search</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <img src="img/home.png" class="w-100 h-100">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container navdistance">
+        <div class="row justify-content-between">
+            <div class="col-md-auto col-12">
+                <h2>Best home in our city</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed dolorem dicta illum<br> nulla molestiae
+                    inventore quasi, fugit eaque illo at perferendis minus.</p>
+            </div>
+            <div class="col-md-auto col-12 my-auto">
+                <button class="btn btn-outline-primary rounded-pill">Explore more<i
+                        class=" ms-2 fa-solid fa-location-arrow"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h1 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                        <span class="new">
+                            <p>new</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h2 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                        <span class="new">
+                            <p>new</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h3 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                        <span class="new">
+                            <p>new</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h4 (2).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                        <span class="new">
+                            <p>new</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h5 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                        <span class="new">
+                            <p>new</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h6 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h7 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3">
+                <div class="house shadow rounded">
+                    <img src="img/h8 (1).jpg" class="w-100">
+                    <h5 class="px-2 pt-2">$330.02</h5>
+                    <h6 class="px-2 houseName">Great room</h6>
+                    <p class="px-2">Lorem ipsum dolor sit, <br> amet consectetur </p>
+                    <hr>
+                    <div class="row mt-2 px-2 d-flex justify-content-between">
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bed"></i>
+                            <p class="mx-1">3</p>
+                            <p>Beds</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-bath"></i>
+                            <p class="mx-1">3</p>
+                            <p>Bath</p>
+                        </div>
+                        <div class="col-4 d-flex">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <p class="mx-1">35</p>
+                            <p>Left</p>
+                        </div>
+                        <div class="heart">
+                            <i class="fa-solid  fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container navdistance">
+        <div class="row justify-content-between">
+            <div class="col-lg-6 col-12">
+                <img src="img/about.jpg" class="w-100 rounded">
+            </div>
+            <div class="col-lg-5 col-12 justify-content-start">
+                <h1 class="fw-bolder">We specialize in quality Home Revanotions</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptatem explicabo officiis
+                    iusto fugit consectetur corrupti unde fuga minus velit commodi aliquam, eius, ut, a deleniti!
+                    Voluptatibus eius molestiae fugit?</p>
+                <div class="row justify-content-between">
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container navdistance">
+        <div class="row justify-content-between">
+            <div class="col-lg-5 col-12 justify-content-start">
+                <h1 class="fw-bolder">We Are Expert In Historic Home Revanotions</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda voluptatem explicabo officiis
+                    iusto fugit consectetur corrupti unde fuga minus velit commodi aliquam, eius, ut, a deleniti!
+                    Voluptatibus eius molestiae fugit?</p>
+                <div class="row justify-content-between">
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <i class="fa-regular fa-circle-check text-primary me-2"></i>
+                        <p>Smart Home</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-12">
+                <img src="img/about.jpg" class="w-100 rounded">
+            </div>
+        </div>
+    </div>
+    <div class="container navdistance">
+        <div class="row">
+            <div class="col-12 video-section">
+                <video src="img/house.mp4" class="w-100 rounded" id="myVideo" controls loop></video>
+                <button><i class="fa-solid fa-play"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container navdistance">
+        <div class="row justify-content-between">
+            <div class="col-md-auto col-12">
+                <p class="text-primary">Our Customers</p>
+                <h2 class="fw-bold lh-base">We Help 1000+ Family Find<br>
+                    Their True Home</h2>
+                <div class="img">
+                    <img src="img/pro1.jpg" class="rounded-pill">
+                    <img src="img/pro2.jpg" class="rounded-pill img1">
+                    <img src="img/pro3.jpg" class="rounded-pill img2">
+                    <div class="rounded-pill">
+                        <p>99+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-auto col-12 my-auto">
+                <button class="btn btn-outline-primary rounded-pill">Views All Stories<i
+                        class=" ms-2 fa-solid fa-location-arrow"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container navdistance mb-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 mt-3 position-relative">
+                <img src="img/man1.jpg" height="220px" class="w-100 rounded object-fit-cover">
+                <div class="profile-section">
+                    <div>
+                        <h5 class="text-light">Ali Khan</h5>
+                        <p class="text-light">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning me-2"></i> 5.0
+                        </p>
+                    </div>
+                   <img src="img/pro1.jpg" >
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3  position-relative">
+                <img src="img/man2.jpg" height="220px" class="w-100 rounded object-fit-cover">
+                <div class="profile-section">
+                    <div>
+                        <h5 class="text-light">Ali Khan</h5>
+                        <p class="text-light">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning me-2"></i> 5.0
+                        </p>
+                    </div>
+                   <img src="img/pro2.jpg" >
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3 position-relative">
+                <img src="img/man3.jpg" height="220px" class="w-100 rounded object-fit-cover">
+                <div class="profile-section">
+                    <div>
+                        <h5 class="text-light">Ali Khan</h5>
+                        <p class="text-light">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning me-2"></i> 5.0
+                        </p>
+                    </div>
+                   <img src="img/pro3.jpg" >
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12 mt-3 position-relative">
+                <img src="img/man4.jpg" height="220px" class="w-100 rounded object-fit-cover">
+                <div class="profile-section">
+                    <div>
+                        <h5 class="text-light">Ali Khan</h5>
+                        <p class="text-light">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning me-2"></i> 5.0
+                        </p>
+                    </div>
+                   <img src="img/pro4.jpg" >
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mt-3  position-relative">
+                <img src="img/man5.jpg" height="220px" class="w-100 rounded object-fit-cover">
+                <div class="profile-section">
+                    <div>
+                        <h5 class="text-light">Ali Khan</h5>
+                        <p class="text-light">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning me-2"></i> 5.0
+                        </p>
+                    </div>
+                   <img src="img/pro5.jpg" >
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12 mt-3  position-relative">
+                <img src="img/man6.jpg" height="220px" class="w-100 rounded object-fit-cover">
+                <div class="profile-section">
+                    <div>
+                        <h5 class="text-light">Ali Khan</h5>
+                        <p class="text-light">
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning"></i>
+                            <i class="fa-solid fa-star text-warning me-2"></i> 5.0
+                        </p>
+                    </div>
+                   <img src="img/pro6.jpg" >
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark mb-0 pt-2 mt-3">
+        <div class="container my-5  py-3">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-6 text-light">
+                    <a class="navbar-brand text-light fw-bold " href="#"><i class="fa-solid fa-house-crack me-1 pb-2"></i>home</a>
+                    <p class="mt-3">GymVast, 50th street, 14th<br> floor, NYC 1000222</p>
+                   
+    
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <h5 class="fw-bolder pb-2 text-light">Quick Links</h5>
+                    <ul class="footer-list">
+                        <li><a class="text-decoration-none text-light" href="#">Home</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">Rent</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">Sell</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">Buy</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <h5 class="fw-bolder pb-2 text-light">Useful Links</h5>
+                    <ul class="footer-list">
+                        <li><a class="text-decoration-none text-light" href="#"> About Us</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">Contact Us</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">Privacy Policy</a></li>
+                        <li><a class="text-decoration-none text-light" href="#">Terms & Conditions</a></li>
+    
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 text-light">
+                    <h5 class="fw-bolder pb-2">Newsletter</h5>
+                    <p> Get 10% Discount with <br>
+                    Email Newsletter</p>
+                    <div class="icon ">
+                        <div>
+                            <i class="fa-brands fa-facebook fs-4"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-linkedin fs-4"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-tiktok fs-4"></i>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-youtube fs-4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <p class="text-center text-light pt-3 pb-3">&#169; KING ALL RIGHT RESERVED</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
